@@ -5,7 +5,6 @@
  **************************************************************************/
 
 import * as React from "react";
-import { Pet } from "../models";
 import { ButtonProps, FlexProps, ImageProps, TextProps } from "@aws-amplify/ui-react";
 import { MyIconProps } from "./MyIcon";
 export declare type EscapeHatchProps = {
@@ -31,7 +30,7 @@ export declare type PetProfileOverridesProps = {
     Button?: PrimitiveOverrideProps<ButtonProps>;
 } & EscapeHatchProps;
 export declare type PetProfileProps = React.PropsWithChildren<Partial<FlexProps> & {
-    pet?: Pet;
+    pet?: any;
 } & {
     overrides?: PetProfileOverridesProps | undefined | null;
 }>;
